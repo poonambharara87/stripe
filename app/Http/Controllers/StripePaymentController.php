@@ -43,7 +43,9 @@ class StripePaymentController extends Controller
     {
         try{
 
-            $stripe = new \Stripe\StripeClient('sk_test_51PBFPkSFx3ycEFKbVNewa0SXHR9WViI0CvlwGARCHovMkalSFtHAROrl0EZo9Fiae5WiufHVeWPsxQTeZxkwnnTu00DqgLMZOz');
+            $stripe = new \Stripe\StripeClient(
+               env('STRIPE_SECRET')
+            );
             
             $stripe->tokens->create([
                 'card' => [
