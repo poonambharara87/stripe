@@ -1,0 +1,12 @@
+https://www.youtube.com/watch?v=nf3Z_NXtTk4&list=PLDc9bt_00KcJaSZXhpCqT6J05HP2qt5JQ&index=3
+
+
+https://laravel.com/docs/11.x/billing#introduction
+
+
+https://dashboard.stripe.com/test/payments
+
+
+
+
+https://github.com/stripe/stripe-php
