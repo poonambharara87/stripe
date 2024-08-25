@@ -29,7 +29,7 @@ Route::get('/form', function(){
 });
 
 Route::post('/payments/pay', [PaymentController::class, 'pay'])->name('pay');
-Route::get('/payments/approval', [PaymentController::class, 'approval']);
-Route::get('/payments/cancelled', [PaymentController::class, 'cancelled']);
+Route::get('/payments/approval', [PaymentController::class, 'approval'])->name('approval');
+Route::get('/payments/cancelled', [PaymentController::class, 'cancelled'])->name('cancelled');
 
 require __DIR__.'/auth.php';

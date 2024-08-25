@@ -43,11 +43,13 @@ class PaymentController extends Controller
 
     public function approval()
     {
-
+      
     }
 
     public function cancelled()
     {
-        
+      
     }
+
+
     }

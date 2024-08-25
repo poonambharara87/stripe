@@ -9,8 +9,8 @@ trait ConsumesExternalService
     public function makeRequest($method, $requestUrl, $queryParams = [],
         $formParams = [], $headers = [], $isJsonRequest = false)
     {
-        $client = new Client([
-            'verify',
+        $client =  new Client([
+            'verify' => 'C:/xampp/php/extras/ssl/cacert.pem',
             'base_uri' => $this->baseUri,
         ]);
 
