@@ -70,19 +70,19 @@ class PayPalService
     }
 
 
-    // public function capturePayment($approvalId)
-    // {
-    //     return $this->makeRequest(
-    //         'POST',
-    //         // https://api-m.paypal.com/v2/checkout/orders/{id}/capture
-    //         '/v2/checkout/orders/{$approvalId}/capture',
-    //         [],
-    //         [],
-    //         [
-    //             'Content-Type' => 'application/json'
-    //         ]
-    //     );
-    // }
+    public function capturePayment($approvalId)
+    {
+        // $approvalId = trim($approvalId);
+        return $this->makeRequest(
+            'POST',
+            "/v2/checkout/orders/{$approvalId}/capture",
+            [],
+            [],
+            [
+                'Content-Type' => 'application/json'
+            ]
+        );
+    }
     // Add other PayPal API methods as needed
 
 }
